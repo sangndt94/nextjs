@@ -91,7 +91,7 @@ const DataPackageComponent: React.FC = () => {
                   <div className="data-package_price">
                     {formatPrice({
                       locale: "vi",
-                      number: item.price as number,
+                      number: item?.price || 0,
                     })}
                   </div>
                 </Row>
