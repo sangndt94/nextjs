@@ -1,4 +1,3 @@
-import { Layout } from "antd";
 import React from "react";
 import BannerComponent from "../../components/common/BannerComponent";
 import DataPackageComponent from "../../components/common/DataPackageComponent";
@@ -7,7 +6,6 @@ import HeaderComponent from "../../components/common/Header";
 import LayoutComponent from "../../components/common/LayoutComponent";
 import MapHomeComponent from "./Map.home";
 
-const { Content } = Layout;
 const HomePage: React.FC = () => (
   <>
     <HeaderComponent />
@@ -19,6 +17,47 @@ const HomePage: React.FC = () => (
           "Khắc họa một Việt Nam gần gũi, thân thương và sống động qua những câu chuyện giàu bản sắc văn hóa của từng địa phương"
         }
         key={"HomePage-1"}
+        haveCarousel={true}
+        swiper={{
+          list: [
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+            {
+              title: "Visit the Sa Phin H'Mong Palace",
+              background: "/images/bg-location.png",
+            },
+          ],
+        }}
       />
       <MapHomeComponent />
 
